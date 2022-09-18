@@ -1,3 +1,6 @@
+import Phonebook from './Phonebook/Phonebook.jsx';
+import PhonebookWrapper from './Phonebook/PhonebookWrapper.jsx';
+
 export const App = () => {
   return (
     <div
@@ -7,10 +10,12 @@ export const App = () => {
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
-        color: '#010101'
+        color: '#010101',
       }}
     >
-      React homework template
+      <PhonebookWrapper title="Phonebook">
+        <Phonebook />
+      </PhonebookWrapper>
     </div>
   );
 };
