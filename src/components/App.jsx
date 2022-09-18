@@ -1,5 +1,5 @@
 import Phonebook from './Phonebook/Phonebook.jsx';
-import PhonebookWrapper from './Phonebook/PhonebookWrapper.jsx';
+import Wrapper from './Phonebook/Wrapper.jsx';
 
 export const App = () => {
   return (
@@ -13,9 +13,9 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      <PhonebookWrapper title="Phonebook">
+      <Wrapper title="Phonebook">
         <Phonebook />
-      </PhonebookWrapper>
+      </Wrapper>
     </div>
   );
 };
