@@ -6,7 +6,7 @@
   width: 400px;
   border: 1px solid #212121;
 }
-.formWrapper {
+.formFlex {
   display: flex;
   flex-direction: column;
 }
@@ -34,11 +34,6 @@
 
   cursor: pointer;
   background-color: #f5f4fa;
-}
-
-.numberWrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .deleteButton {

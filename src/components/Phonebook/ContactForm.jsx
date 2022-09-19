@@ -30,7 +30,7 @@ export default class ContactForm extends Component {
   render() {
     const { nameInputId, numberInputId, handleSubmit, handleChange } = this;
     return (
-      <form action="" className={css.formWrapper} onSubmit={handleSubmit}>
+      <form action="" className={css.formFlex} onSubmit={handleSubmit}>
         <label htmlFor={nameInputId} className={css.labelText}>
           Name
         </label>
@@ -45,7 +45,7 @@ export default class ContactForm extends Component {
           value={this.state.name}
           onChange={handleChange}
         />
-        <div className={css.numberWrapper}>
+        <div className={css.formFlex}>
           <label htmlFor={numberInputId} className={css.labelText}>
             Number
           </label>
