@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from '../Phonebook/Phonebook.module.css';
 
 export default function Filter({ filter, onChange }) {
@@ -17,3 +18,8 @@ export default function Filter({ filter, onChange }) {
     </div>
   );
 }
+
+Filter.propTypes = {
+  filter: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};

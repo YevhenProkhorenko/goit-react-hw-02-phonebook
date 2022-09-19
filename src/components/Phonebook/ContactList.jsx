@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from '../Phonebook/Phonebook.module.css';
 
 export default function ContactList({ contacts, removeContact }) {
@@ -21,3 +22,10 @@ export default function ContactList({ contacts, removeContact }) {
     </div>
   );
 }
+ContactList.propTypes = {
+  contacts: PropTypes.arrayOf({
+    name: PropTypes.string.isRequired,
+    number: PropTypes.number.isRequired,
+  }),
+  removeContact: PropTypes.func.isRequired,
+};
