@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import css from '../Phonebook/Phonebook.module.css';
 
 export default function Wrapper({ title, children }) {
@@ -9,3 +10,8 @@ export default function Wrapper({ title, children }) {
     </div>
   );
 }
+
+Wrapper.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.object,
+};

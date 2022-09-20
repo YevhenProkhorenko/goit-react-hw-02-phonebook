@@ -20,6 +20,6 @@ export default function Filter({ filter, onChange }) {
 }
 
 Filter.propTypes = {
-  filter: PropTypes.string.isRequired,
+  filter: PropTypes.string,
   onChange: PropTypes.func.isRequired,
 };
